@@ -10,7 +10,7 @@ Text recognition (optical character recognition) with deep learning methods in f
 
 ## Dependencies
 - Install Dependencies `$ pip install -r requirements.txt`
-- Download model weights [Here](), place it in ``
+- Download model weights [Here]().
 
 ## Getting Started
 <p align="center">
