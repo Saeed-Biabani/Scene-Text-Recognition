@@ -27,9 +27,8 @@ def extract_ds_info(ds_path_list):
     return dict_, max_str_len
 
 ds_path = {
-    "train_ds" : "path/to/train/dataset",
-    "test_ds" : "path/to/test/dataset",
-    "val_ds" : "path/to/val/dataset",
+    "train_ds" : "path/to/train/ds",
+    "test_ds" : "path/to/test/ds"
 }
 dict_, max_str_len = extract_ds_info(ds_path.values())
 batch_size = 32
@@ -38,4 +37,4 @@ img_w = 192
 img_channel = 1
 learning_rate = 3e-4
 betas = (0, 0.999)
-epochs = 500
+epochs = 10
