@@ -32,7 +32,9 @@ Text recognition (optical character recognition) with deep learning methods in f
 │       ├── misc.py
 │       └── transforms.py
 ├── config.py
+├── LICENSE
 ├── main.py
+├── README.md
 ├── test.py
 └── train.py
 ```
@@ -92,4 +94,4 @@ where $\ y_{{\pi}_t}^t$ t is the probability of generating character $\ \pi_t$ a
 - [Text recognition (optical character recognition) with deep learning methods, ICCV 2019 ](https://github.com/clovaai/deep-text-recognition-benchmark)
 
 ## 🛡️ License <a name="license"></a>
-Project is distributed under [MIT License]()
+Project is distributed under [MIT License](https://github.com/Saeed-Biabani/Scene-Text-Recognition/blob/main/LICENSE)
