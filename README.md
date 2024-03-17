@@ -78,7 +78,7 @@ CTC takes a sequence $\ H = h_1 , . . . , h_T$ , where $\ T$ is the sequence len
 ```math
 P(\pi|H) = \prod_{t = 1}^T y_{{\pi}_t}^t
 ```
-where $\ y_{{\pi}_t}^t$ t is the probability of generating character $\ \pi_t$ at each time step $\ t$.
+where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at each time step $\ t$.
 
 ## Samples
 <p align="center">
