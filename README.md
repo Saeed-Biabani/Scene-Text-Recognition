@@ -32,10 +32,7 @@ Text recognition (optical character recognition) with deep learning methods in f
 │       ├── misc.py
 │       └── transforms.py
 ├── config.py
-├── LICENSE
 ├── main.py
-├── README.md
-├── requirements.txt
 ├── test.py
 └── train.py
 ```
