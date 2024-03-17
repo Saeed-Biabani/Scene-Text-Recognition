@@ -30,10 +30,9 @@ Text recognition (optical character recognition) with deep learning methods in f
 │       ├── labelConverter.py
 │       ├── loss_calculator.py
 │       ├── misc.py
+│       ├── trainUtils.py
 │       └── transforms.py
 ├── config.py
-├── main.py
-├── test.py
 └── train.py
 ```
 
