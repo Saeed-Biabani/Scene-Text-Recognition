@@ -35,6 +35,7 @@ Text recognition (optical character recognition) with deep learning methods in f
 ├── LICENSE
 ├── main.py
 ├── README.md
+├── requirements.txt
 ├── test.py
 └── train.py
 ```
