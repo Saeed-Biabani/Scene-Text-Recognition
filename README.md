@@ -1,5 +1,9 @@
-# Scene Text Recognition
-Text recognition (optical character recognition) with deep learning methods in farsi.
+<p align="center">
+  <h1 align="center">Scene Text Recognition</h1>
+</p>
+
+Scene Text Recognition With Deep Learning Methods In Farsi.
+
 #### **Quick Links**
 - [Dependencies](#Dependencies)
 - [Getting Started](#Getting-Started)
@@ -10,7 +14,7 @@ Text recognition (optical character recognition) with deep learning methods in f
 
 ## Dependencies
 - Install Dependencies `$ pip install -r requirements.txt`
-- Download model weights [Here](), place it in ``
+- Download Pretrained Weights [Here]().
 
 ## Getting Started
 <p align="center">
@@ -32,8 +36,6 @@ Text recognition (optical character recognition) with deep learning methods in f
 │       ├── misc.py
 │       └── transforms.py
 ├── config.py
-├── main.py
-├── test.py
 └── train.py
 ```
 
@@ -42,11 +44,10 @@ Text recognition (optical character recognition) with deep learning methods in f
 ds_path = {
     "train_ds" : "path/to/train/dataset",
     "test_ds" : "path/to/test/dataset",
-    "val_ds" : "path/to/val/dataset",
 }
 ```
 
-- DataSet Structure (Each image must eventually contain a word)
+- DataSet Structure (each image must eventually contain a word)
 ```
 .
 ├── Images
@@ -54,10 +55,8 @@ ds_path = {
 │   ├── img_2.jpg
 │   ├── img_3.jpg
 │   ├── img_4.jpg
-│   ├── img_5.jpg
-│
+│   └── img_5.jpg
 │   ...
-│
 └── labels.json
 ```
 
