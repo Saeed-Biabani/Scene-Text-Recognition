@@ -14,7 +14,7 @@ Scene Text Recognition With Deep Learning Methods In Farsi.
 
 ## Dependencies
 - Install Dependencies `$ pip install -r requirements.txt`
-- Download Pretrained Weights [Here]().
+- Download Pretrained Weights [Here]()
 
 ## Getting Started
 <p align="center">
@@ -34,6 +34,7 @@ Scene Text Recognition With Deep Learning Methods In Farsi.
 │       ├── labelConverter.py
 │       ├── loss_calculator.py
 │       ├── misc.py
+│       ├── trainUtils.py
 │       └── transforms.py
 ├── config.py
 └── train.py
@@ -74,11 +75,11 @@ O = -\sum_{(X_i, Y_i) \in TD} \log P(Y_i|X_i)
 This function calculates a cost from an image and its word label, and the modules in the framework are trained end-to-end manner.
 
 ### CTC Loss
-CTC takes a sequence $\ H = h_1 , . . . , h_T$ , where $\ T$ is the sequence length, and outputs the probability of $\ pi$, which is defined as
+CTC takes a sequence $\ H = h_1 , . . . , h_T$ , where $\ T$ is the sequence length, and outputs the probability of $\ \pi$, which is defined as
 ```math
 P(\pi|H) = \prod_{t = 1}^T y_{{\pi}_t}^t
 ```
-where $\ y_{{\pi}_t}^t$ t is the probability of generating character $\ \pi_t$ at each time step $\ t$.
+where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at each time step $\ t$.
 
 ## Samples
 <p align="center">
