@@ -4,11 +4,6 @@
 
 Scene Text Recognition With Deep Learning Methods In Farsi.
 
-<p align="center">
-  <div align="center"><img src="figures/crnn.png"></div>
-  <div align="center"><figcaption><strong>Fig. 1: Model architectur.</strong></figcaption></div>
-</p>
-
 #### **Quick Links**
 - [Dependencies](#Dependencies)
 - [Getting Started](#Getting-Started)
@@ -22,6 +17,11 @@ Scene Text Recognition With Deep Learning Methods In Farsi.
 - Download Pretrained Weights [Here](https://huggingface.co/ordaktaktak/Scene-Text-Recognition)
 
 ## Getting Started
+
+<p align="center">
+  <div align="center"><img src="figures/crnn.png"></div>
+  <div align="center"><figcaption><strong>Fig. 1: Model architectur.</strong></figcaption></div>
+</p>
 
 - Project Structure
 ```
