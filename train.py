@@ -6,9 +6,9 @@ from src.nn.ocr_model import RecognizerNetwork
 from src.utils.dataset import DataGenerator
 from torchvision.transforms import Compose
 from torch.utils.data import DataLoader
+from src.utils.misc import plotHistory
 import config as cfg
 import torch
-import tqdm
 
 def printConfigVars(module, fname):
     pa = [item for item in dir(module) if not item.startswith("__")]
@@ -44,16 +44,20 @@ printParams(model, "OCR model trainable params : {:,}")
 
 converter = CTCLabelConverter(cfg)
 
+log = {"train":[], "val":[]}
 for epoch in range(cfg.epochs):
-    trainOneEpoch(
+    train_loss = trainOneEpoch(
         model,
         trian_dataloader,
         converter, opt,
         device, epoch
     )
-    testOneEpoch(
+    val_loss = testOneEpoch(
         model,
         test_dataloader,
         converter, device, epoch
     )
-torch.save(model.state_dict(), "ocr.pth")
+    log["train"].append(train_loss)
+    log["val"].append(val_loss)
+torch.save(model.state_dict(), "test.pth")
+plotHistory(log)

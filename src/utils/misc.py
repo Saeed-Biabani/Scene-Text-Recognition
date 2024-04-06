@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import torch.nn.init as init
 import numpy as np
 import json
@@ -23,3 +24,16 @@ def WeightInitializer(model):
 def loadJson(fname):
     with open(fname, 'r') as f:
         return json.load(f)
+
+def plotHistory(history):
+    plt.figure(figsize = (10, 5))
+    plt.title("Learning Curve")
+
+    plt.plot(history["train"], 'red')
+    plt.plot(history["val"], 'green')
+
+    plt.ylabel("CTC Loss")
+    plt.xlabel("Epoch")
+    plt.legend(["train", "val"], loc = "upper right")
+    plt.savefig("figures/LearningCurve.png")
+    plt.close()

@@ -76,12 +76,18 @@ O = -\sum_{(X_i, Y_i) \in TD} \log P(Y_i|X_i)
 ```
 This function calculates a cost from an image and its word label, and the modules in the framework are trained end-to-end manner.
 
+<p align="center">
+  <div align="center"><img src="figures/LearningCurve.png"></div>
+  <div align="center"><figcaption><strong>Fig. 1: Model Training History.</strong></figcaption></div>
+</p>
+
 ### CTC Loss
 CTC takes a sequence $\ H = h_1 , . . . , h_T$ , where $\ T$ is the sequence length, and outputs the probability of $\ \pi$, which is defined as
 ```math
 P(\pi|H) = \prod_{t = 1}^T y_{{\pi}_t}^t
 ```
 where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at each time step $\ t$.
+
 
 ## Samples
 <p align="center">

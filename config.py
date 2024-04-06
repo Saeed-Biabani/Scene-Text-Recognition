@@ -30,6 +30,7 @@ ds_path = {
     "train_ds" : "path/to/train/ds",
     "test_ds" : "path/to/test/ds"
 }
+
 dict_, max_str_len = extract_ds_info(ds_path.values())
 batch_size = 32
 img_h = 64
