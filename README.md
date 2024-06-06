@@ -7,6 +7,7 @@ Scene Text Recognition With Deep Learning Methods In Farsi.
 #### **Quick Links**
 - [Dependencies](#Dependencies)
 - [Getting Started](#Getting-Started)
+- [Overview](#Overview)
 - [Training](#Training)
 - [Samples](#Samples)
 - [References](#References)
@@ -67,6 +68,11 @@ ds_path = {
 ```json
 {"img_1": "بالا", "img_2": "و", "img_3": "بدانند", "img_4": "چندین", "img_5": "به", ...}
 ```
+## Overview
+<p align="center">
+  <img src="figures/ROC.png">
+</p>
+
 ## Training
 
 ### Objective Function
