@@ -27,7 +27,7 @@ converter = CTCLabelConverter(cfg)
 
 prec_list = []
 recal_list = []
-auc_list = []
+f1_list = []
 
 gt_list = []
 pred_list = []
@@ -54,10 +54,12 @@ for (img, gt) in loop:
 
     prec_list.append(calculate_precision(gt, txt))
     recal_list.append(calculate_recall(gt, txt))
+    f1_list.append(calculate_f1_score(gt, txt))
     
     loop.set_postfix({
         "Recall" : np.mean(recal_list),
         "Precision" : np.mean(prec_list),
+        "F1" : np.mean(f1_list)
     })
 
 all_true_labels, all_conf_scores = accumulate_roc_data(gt_list, pred_list, conf_list)

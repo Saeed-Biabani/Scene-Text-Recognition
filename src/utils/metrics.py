@@ -101,3 +101,29 @@ def accumulate_roc_data(batch_ground_truth, batch_predictions, batch_confidences
         all_conf_scores.extend(conf_scores)
         
     return np.array(all_true_labels), np.array(all_conf_scores)
+
+def calculate_f1_score(ground_truth, predictions):
+    """
+    Calculate the F1 score for OCR model predictions.
+
+    :param ground_truth: The actual text that should be identified.
+    :param predictions: The text identified by the OCR model.
+    :return: F1 score.
+    """
+    # Convert the texts to sets of characters for easy comparison
+    ground_truth_chars = set(ground_truth)
+    predicted_chars = set(predictions)
+    
+    # Calculate true positives, false positives, and false negatives
+    true_positives = len(ground_truth_chars.intersection(predicted_chars))
+    false_positives = len(predicted_chars - ground_truth_chars)
+    false_negatives = len(ground_truth_chars - predicted_chars)
+    
+    # Calculate precision and recall
+    precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) != 0 else 0
+    recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) != 0 else 0
+    
+    # Calculate F1 score
+    f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) != 0 else 0
+    
+    return f1_score
