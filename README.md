@@ -102,6 +102,8 @@ where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at 
       <th>Recall</th>
       <th>Precision</th>
       <th>F1</th>
+      <th>Params</th>
+      <th>Speed<sup>(img/s)</th>
     </tr>
     <tr>
       <td> $\ OCR-Base$ </td>
@@ -109,6 +111,8 @@ where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at 
       <td> $\ 0.993$ </td>
       <td> $\ 0.997$ </td>
       <td> $\ 0.997$ </td>
+      <td> $\ 35,023,143$ </td>
+      <td> $\ 89.24$ </td>
     </tr>
   </table> 
 </div>div>
