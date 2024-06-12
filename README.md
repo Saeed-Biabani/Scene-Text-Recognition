@@ -94,6 +94,22 @@ P(\pi|H) = \prod_{t = 1}^T y_{{\pi}_t}^t
 ```
 where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at each time step $\ t$.
 
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Input Size</th>
+    <th>Recall</th>
+    <th>Precision</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <td>OCR-Base</td>
+    <td> $\ 1$ $\ \times$ $\ 64$ $\ \times$ $\ 192$</td>
+    <td> $\ 0.993$ </td>
+    <td> $\ 0.997$ </td>
+    <td> $\ 0.997$ </td>
+  </tr>
+</table> 
 
 ## Samples
 <p align="center">
