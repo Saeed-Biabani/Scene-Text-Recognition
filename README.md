@@ -104,7 +104,7 @@ where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at 
       <th>F1</th>
     </tr>
     <tr>
-      <td>OCR-Base</td>
+      <td> $\ OCR-Base$ </td>
       <td> $\ 1$ $\ \times$ $\ 64$ $\ \times$ $\ 192$</td>
       <td> $\ 0.993$ </td>
       <td> $\ 0.997$ </td>
