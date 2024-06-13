@@ -115,7 +115,7 @@ where $\ y_{{\pi}_t}^t$ is the probability of generating character $\ \pi_t$ at 
       <td> $\ 89.24$ </td>
     </tr>
   </table> 
-</div>div>
+</div>
 
 ## Samples
 <p align="center">
