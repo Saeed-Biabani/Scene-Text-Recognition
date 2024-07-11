@@ -20,7 +20,7 @@ Scene Text Recognition With Deep Learning Methods In Farsi.
 ## Getting Started
 
 <p align="center">
-  <div align="center"><img src="figures/crnn.png"></div>
+  <div align="center"><img src="figures/crnn.png" height = 500 ></div>
   <div align="center"><figcaption><strong>Fig. 1: Model architectur.</strong></figcaption></div>
 </p>
 
